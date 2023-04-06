@@ -1,7 +1,7 @@
 // 숫자 야구
 
 // 랜덤 숫자 생성 로직
-const baseball = [];
+const baseball = ["7","4","5"];
 
 // 랜덤 숫자 생성 로직
 let NumBaseball = function () {
@@ -20,11 +20,11 @@ NumBaseball();
 let play = function (input) {
   let ball = 0;
   let strike = 0;
-  let useInput = input.split("");
+  let useInput = input.split("");  
   for (i = 0; i < 3; i++) {
     const index = useInput.indexOf(baseball[i]);
     if (index > -1) {
-      if (index === i) {
+      if (index === i) { 
         strike++;
       } else {
         ball++;
@@ -33,9 +33,10 @@ let play = function (input) {
   }
   strike === 3 ? alert("정답입니다!") : console.log(strike + "S" + ball + "B");
 };
-console.log(baseball);
+
 // 게임 실행 로직
 let guessCount = 0;
+
 while (true) {
   guessCount++;
   console.log(guessCount + "번째 시도");
