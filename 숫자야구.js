@@ -1,7 +1,7 @@
 // 숫자 야구
 
 // 랜덤 숫자 생성 로직
-const baseball = ["7","4","5"];
+const baseball = [];
 
 // 랜덤 숫자 생성 로직
 let NumBaseball = function () {
