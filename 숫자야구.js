@@ -31,7 +31,8 @@ let play = function (input) {
       }
     }
   }
-  strike === 3 ? alert("정답입니다!") : console.log(strike + "S" + ball + "B");
+  strike === 3 ? alert('정답입니다') : console.log(strike + "S" + ball + "B");
+  return strike;
 };
 
 // 게임 실행 로직
@@ -40,8 +41,7 @@ let guessCount = 0;
 while (true) {
   guessCount++;
   console.log(guessCount + "번째 시도");
-  if (play(prompt("3자리 숫자를 입력하세요")) === alert("정답입니다!")) {
-    console.log('정답')
+  if (play(prompt('3자리 숫자를 입력해주세요')) === 3) {
     break;
   }
 }
